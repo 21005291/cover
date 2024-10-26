@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date: 26-10-2021
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,10 +31,102 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+index.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Cover Page</title>
+</head>
+<body>
+    <div class="cover" >
+        <img src="logoo.png" alt="Logo" class="logo">
+        <h1 class="book-title">The Atomic Habits</h1>
+        <p class="description">Small habits make a big difference</p><br><br><br><br><br><br><br><br><br>
+        <h2 class="author">James Clear</h2>
+    </div>
+</body>
+</html>
+
+```
+styles.css
+```
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+}
+
+.cover {
+    text-align: center;
+    padding: 140px;
+    border: 5px solid #35424a;
+    border-radius: 15px;
+    background-color:lightblue;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 160px; 
+    background-image: url('cover.jpeg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.logo {
+
+    width: 100px; 
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.book-title {
+    font-size: 24px;
+    color: #35424a;
+    margin: 10px 0;
+}
+
+.author {
+    font-size: 18px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.genre, .publication-date, .isbn {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+.buy-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+```
 
 
 ## OUTPUT:
-
+![alt text](<Screenshot 2024-10-26 084446.png>)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
